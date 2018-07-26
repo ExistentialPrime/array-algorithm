@@ -1,0 +1,14 @@
+<div class="widget row">
+
+	<div class="col-3">Data Array:</div>
+	<div class="col-9"><input type="text" [(ngModel)]="dataArrayString"></div>
+	<div class="col-3">Layout Array:</div>
+	<div class="col-9"><input type="text" [(ngModel)]="layoutArrayString"></div>
+	<div class="col-3">Output Array (Expected):</div>
+	<div class="col-9 text-info">[[1,2,null,null],[null, 3,4,5]]</div>
+	<div class="col-3">Output Array (Actual):</div>
+	<div class="col-9 text-success">{{outputArrayString}}</div>
+	<div class="col-12 mt-2">
+		<button class="btn btn-primary btn-block" (click)='calculate()'>Calculate</button>
+	</div>
+</div>

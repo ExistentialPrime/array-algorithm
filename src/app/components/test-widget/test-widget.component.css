@@ -1,0 +1,9 @@
+.widget { 
+	padding: 10px;
+	border: 1px solid #ccc;
+	box-shadow: 3px 3px 6px #aaaaaa;
+}
+
+.widget input { 
+	width: 100%;
+}

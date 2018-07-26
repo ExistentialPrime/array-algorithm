@@ -1,0 +1,56 @@
+<div class="text-center">
+  <h1>
+    Array Algorithm
+  </h1>  
+</div>
+
+<div class="row">
+	<div class="col-12"><h2><i class="fa fa-hand-o-right"></i> Given</h2></div>
+	<div class="col-8"><ul>
+			<li>A definition for data within a table structure of: [["1","2"],["3","4","5"]]</li>
+			<li>Cellspan information represented as: [&#123;"1":[2,1]	&#125;,&#123;	"2":[1,3]	&#125;]</li>
+			<li>Each member of the array is a value that represents the data that spans multiple
+					columns and the value is the cell span information [rowspan, columnspan]</li>
+	</ul></div>
+	<div class="col-4">
+			<table class="table">
+					<tr><td rowspan="2">1</td><td colspan="3">2</td></tr>
+					<tr><td>3</td><td>4</td><td>5</td></tr>
+				</table>
+	</div>
+</div>
+
+
+
+
+<h2><i class="fa fa-cubes"></i> The Challenge</h2>
+<p>
+		Write an algorithm that will calculate the final table as a two-dimensional array
+		with empty values (null, nil, etc.) for blank spaces. The answer to the above would be:
+		[[1,2,null,null],[null, 3,4,5]]
+</p>
+
+
+<h2><i class="fa fa-question-circle-o"></i> Assumptions</h2>
+<ol>
+	<li>Any data not listed in the cellspan information array is a standard 1,1 colspan and rowspan</li>
+	<li>Data items can be any arbitrary object or string</li>
+	<li>Cellspan information must be positive integers</li>
+</ol>
+
+
+
+<h2><i class="fa fa-exclamation-circle"></i> The Answer</h2>
+<div class="alert alert-warning clickable" role="alert" (click)="toggleAnswer()">Click here to see the answer</div>
+<div *ngIf="showAnswer" class="alert alert-primary" role="alert">
+		<pre><code>
+			{{answer}}
+			- JUST SCREENSHOT THE DAMN THING! have them inspect the widget for copyable text
+	</code></pre>
+</div>
+
+
+
+<h3><i class="fa fa-tachometer"></i> Test it!</h3>
+<p>Use the test widget below to enter array values and test the algorithm.</p>
+<app-test-widget></app-test-widget>

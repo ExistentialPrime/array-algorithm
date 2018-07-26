@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+body { background-color: #ffffff; }
+
+.main {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	box-shadow: 1px 1px 5px #000000; 
+	background-color: #fcfcfc;
+}
+
+.table { border: 1px solid black; }
+.table tr { border: 1px solid black; }
+.table tr td { border: 1px solid black; }
+
+.clickable { cursor: pointer; }
