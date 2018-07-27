@@ -9,10 +9,6 @@ export class AppComponent {
 
 	// Properties
 	private showAnswer = true;
-	private answer = `
-	this.dataArray.forEach(dataRow => {
-		this.outputArray.push([]);
-	});`;
 
 	// Toggle our answer to be visible or hidden
 	private toggleAnswer() {

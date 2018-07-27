@@ -35,7 +35,8 @@
 <ol>
 	<li>Any data not listed in the cellspan information array is a standard 1,1 colspan and rowspan</li>
 	<li>Data items can be any arbitrary object or string</li>
-	<li>Cellspan information must be positive integers</li>
+	<li>Layout keys must match exactly to their entry in the data array</li>
+	<li>Layout colspan and rowspan information must be positive integers</li>
 </ol>
 
 
@@ -43,10 +44,9 @@
 <h2><i class="fa fa-exclamation-circle"></i> The Answer</h2>
 <div class="alert alert-warning clickable" role="alert" (click)="toggleAnswer()">Click here to see the answer</div>
 <div *ngIf="showAnswer" class="alert alert-primary" role="alert">
-		<pre><code>
-			{{answer}}
-			- JUST SCREENSHOT THE DAMN THING! have them inspect the widget for copyable text
-	</code></pre>
+		<p>Note: This answer is a 'more complete' solution. It not only demarks empty spaces with null, 
+			but also shows what data item any null spaces belong to.</p>
+		<img src="assets/images/answer.jpg" alt="answer">
 </div>
 
 

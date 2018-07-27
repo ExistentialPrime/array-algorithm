@@ -7,3 +7,17 @@
 .widget input { 
 	width: 100%;
 }
+
+.widget .table { 
+	margin: 5px auto 0px auto;
+	font-size: 0.9em;
+	display: table;
+  width: 100%;
+}
+
+.widget .table tr td { 
+	padding: 2px;
+	text-align: center;
+	display: table-cell;
+  max-width: 0px;
+}
