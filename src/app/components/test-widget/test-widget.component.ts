@@ -69,7 +69,7 @@ export class TestWidgetComponent implements OnInit {
 					if (rowNum + extraHeight > maxHeight) { maxHeight = rowNum + extraHeight; }
 					for (let i = 1; i < rowspan; i++) {
 						if (arrayWidths[rowIndex + i] === undefined) { arrayWidths.push(0); }
-						arrayWidths[rowIndex + i] = colspan;
+						arrayWidths[rowIndex + i] = arrayWidths[rowIndex + i] + colspan;
 					}
 				}
 				arrayWidths[rowIndex] = curWidth;
@@ -94,7 +94,9 @@ export class TestWidgetComponent implements OnInit {
 			dataRow.forEach(dataItem => {
 
 				// Check if the position is open first, otherwise advance it until it is
-				while (this.outputArray[rowIndx][colIndx] !== 'null') { colIndx++; }
+				while (this.outputArray[rowIndx][colIndx] && this.outputArray[rowIndx][colIndx] !== 'null') {
+					colIndx++;
+				}
 
 				let layoutInfo = this.layoutArray.find(item =>  Object.keys(item)[0] === dataItem);
 				if (layoutInfo && layoutInfo !== undefined) {

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 	// Properties
-	private showAnswer = true;
+	private showAnswer = false;
 
 	// Toggle our answer to be visible or hidden
 	private toggleAnswer() {
